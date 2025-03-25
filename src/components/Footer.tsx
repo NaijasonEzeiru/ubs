@@ -29,10 +29,10 @@ const Footer = () => {
           </svg>
           {/* <h2 className="logo mb-5">Union Bank of Switzerland</h2> */}
           <p className="mb-3">
-            Union Bank of Switzerland is a micro banking system. We offer
-            different types of financial services to our customers all over the
-            world such as Loan, Wire transfer, Long term deposit, savings and
-            some other related services.
+            Union bank of Switzerland is a financial base banking system. We
+            offer different types of financial services to our customers all
+            over the world such as Loan, Wire transfer, Long term deposit,
+            savings and some other related services.
           </p>
         </span>
         <span className={styles.sect}>
