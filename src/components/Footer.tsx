@@ -5,8 +5,8 @@ import styles from "@/styles/Footer.module.css";
 const Footer = () => {
   return (
     <footer className="bg-border">
-      <div className="resFlex">
-        <span className={styles.sect1}>
+      <div className="flex justify-between items-start flex-col md:flex-row">
+        <span className="md:max-w-[40%]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
@@ -35,43 +35,55 @@ const Footer = () => {
             savings and some other related services.
           </p>
         </span>
-        <span className={styles.sect}>
+        <span className="">
           <h4>Quick Explore</h4>
           <div className={styles.line}></div>
           <ul className="mt-2">
             <li>
-              <Link className={styles.navLinks} href={"/#contact"}>
+              <Link
+                className="text-[#6f8ba4] hover:underline"
+                href={"/#contact"}
+              >
                 Contact
               </Link>
             </li>
             <li>
-              <Link className={styles.navLinks} href={"/#about"}>
+              <Link className="text-[#6f8ba4] hover:underline" href={"/#about"}>
                 About
               </Link>
             </li>
             <li>
-              <Link className={styles.navLinks} href={"/#services"}>
+              <Link
+                className="text-[#6f8ba4] hover:underline"
+                href={"/#services"}
+              >
                 Services
               </Link>
             </li>
           </ul>
         </span>
-        <span className={styles.sect}>
+        <span className="">
           <h4>Pages</h4>
           <div className={styles.line}></div>
           <ul className="mt-2">
             <li>
-              <Link className={styles.navLinks} href={"/privacy-policy"}>
+              <Link
+                className="text-[#6f8ba4] hover:underline"
+                href={"/privacy-policy"}
+              >
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link className={styles.navLinks} href={"/terms-condition"}>
-                Terms & Condition
+              <Link
+                className="text-[#6f8ba4] hover:underline"
+                href={"/terms-condition"}
+              >
+                Terms &amp; Condition
               </Link>
             </li>
             <li>
-              <Link className={styles.navLinks} href={"/faq"}>
+              <Link className="text-[#6f8ba4] hover:underline" href={"/faq"}>
                 FAQ
               </Link>
             </li>
