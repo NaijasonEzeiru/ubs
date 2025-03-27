@@ -1,6 +1,6 @@
-import { PrismaClient } from '@prisma/client';
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
-import { NextResponse } from 'next/server';
+import { PrismaClient } from "@prisma/client";
+import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
+import { NextResponse } from "next/server";
 
 const prisma = new PrismaClient();
 
@@ -14,11 +14,11 @@ export const PUT = async (
     console.log(account);
     const updatedAdmin = await prisma.user.update({
       where: {
-        account_no: account
+        account_no: account,
       },
       data: {
-        isAdmin
-      }
+        isAdmin,
+      },
     });
 
     console.log(updatedAdmin);
@@ -31,7 +31,7 @@ export const PUT = async (
     }
     console.log(e);
     return new NextResponse(
-      JSON.stringify({ e, message: 'Operation failed' }),
+      JSON.stringify({ e, message: "Operation failed" }),
       { status: 500 }
     );
   }
