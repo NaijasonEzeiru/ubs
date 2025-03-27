@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import AuthContext from '@/components/AuthContext';
-import React, { useContext, useState, useEffect } from 'react';
-import styles from '@/styles/Dashboard.module.css';
-import Image from 'next/image';
-import Modal from '@/components/Modal';
-import { API_URL } from '@/helpers/vars';
+import AuthContext from "@/components/AuthContext";
+import React, { useContext, useState, useEffect } from "react";
+import styles from "@/styles/Dashboard.module.css";
+import Image from "next/image";
+import Modal from "@/components/Modal";
+import { API_URL } from "@/helpers/vars";
 
 const Kyc = () => {
   interface kk {
@@ -21,7 +21,7 @@ const Kyc = () => {
     verifying: boolean;
     pending_KYC: boolean;
     verification_id: number;
-    currency: '$';
+    currency: "€";
     verification: {
       id: number;
       user_id: number;
@@ -36,7 +36,7 @@ const Kyc = () => {
     useContext(AuthContext);
   const [loading, setLoading] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  const [docImg, setDocImg] = useState('');
+  const [docImg, setDocImg] = useState("");
 
   // const [kycList, setKycList] = useState([]);
   // const [loading, setLoading] = useState(false);
@@ -75,30 +75,30 @@ const Kyc = () => {
     const account_no = e.target.value;
     setLoading(true);
     const res = await fetch(`${API_URL}/admin/verify-doc`, {
-      method: 'PUT',
+      method: "PUT",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      credentials: 'include',
+      credentials: "include",
       body: JSON.stringify({
-        account_no
-      })
+        account_no,
+      }),
     });
     const data = await res.json();
     console.log(data);
     setLoading(false);
     if (res.ok) {
-      alert('User verified successfully');
+      alert("User verified successfully");
       getAllUsers();
       console.log(data);
     } else {
-      alert('unsuccessful');
+      alert("unsuccessful");
     }
   };
 
   return (
     <div className={styles.details}>
-      <div className={`${styles['con']} ${styles['over']}`}>
+      <div className={`${styles["con"]} ${styles["over"]}`}>
         <p>Users Documents</p>
         <table>
           <thead>
@@ -128,11 +128,12 @@ const Kyc = () => {
                       <td>{user.fullName}</td>
                       <td>{user.email}</td>
                       <td>
-                        {' '}
+                        {" "}
                         <button
                           onClick={() =>
                             handleImgView(user?.verification?.identity_doc)
-                          }>
+                          }
+                        >
                           Click here
                         </button>
                       </td>
@@ -140,18 +141,20 @@ const Kyc = () => {
                         <button
                           onClick={() =>
                             handleImgView(user?.verification?.address_doc)
-                          }>
+                          }
+                        >
                           Click here
                         </button>
                       </td>
                       <td>
                         {user.verified ? (
-                          'Verified'
+                          "Verified"
                         ) : (
                           <button
                             onClick={verify}
                             value={user.account_no}
-                            disabled={loading}>
+                            disabled={loading}
+                          >
                             Verify
                           </button>
                         )}
@@ -161,7 +164,7 @@ const Kyc = () => {
               )}
             </tbody>
           ) : (
-            ''
+            ""
           )}
         </table>
       </div>
@@ -169,10 +172,11 @@ const Kyc = () => {
         <div className={styles.editTransactionModal}>
           <button
             className={styles.transactionModalCancel}
-            onClick={() => setOpenModal(false)}>
+            onClick={() => setOpenModal(false)}
+          >
             X
           </button>
-          <Image src={docImg} alt='Verification document' fill />
+          <Image src={docImg} alt="Verification document" fill />
         </div>
       </Modal>
     </div>

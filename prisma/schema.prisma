@@ -22,7 +22,7 @@ model User {
   pending_KYC     Boolean       @default(false)
   // transaction_id  Int?          @unique
   verification_id Int?          @unique
-  currency        String        @default("$")
+  currency        String        @default("€")
   transactions    Transaction[]
   verification    Verification? @relation(fields: [verification_id], references: [id])
 }

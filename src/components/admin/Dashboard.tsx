@@ -35,7 +35,7 @@ const Dashboard = () => {
                   <p style={{ whiteSpace: "nowrap" }}>&#8594; View</p>
                 </Link>
               </div>
-              <p>$0</p>
+              <p>€0</p>
             </div>
             <div className="shadow">
               <div className={styles.flex}>
@@ -44,7 +44,7 @@ const Dashboard = () => {
                   <p style={{ whiteSpace: "nowrap" }}>&#8594; View</p>
                 </Link>
               </div>
-              <p>$0</p>
+              <p>€0</p>
             </div>
             <div className="shadow">
               <div className={styles.flex}>
@@ -53,7 +53,7 @@ const Dashboard = () => {
                   <p style={{ whiteSpace: "nowrap" }}>&#8594; View</p>
                 </Link>
               </div>
-              <p>$0</p>
+              <p>€0</p>
             </div>
             <div className="shadow">
               <div className={styles.flex}>
@@ -62,7 +62,7 @@ const Dashboard = () => {
                   <p style={{ whiteSpace: "nowrap" }}>&#8594; View</p>
                 </Link>
               </div>
-              <p>$0</p>
+              <p>€0</p>
             </div>
           </div>
           <div className={styles.resFlex}>
@@ -73,7 +73,7 @@ const Dashboard = () => {
                   <p style={{ whiteSpace: "nowrap" }}>&#8594; View</p>
                 </Link>
               </div>
-              <p>$0</p>
+              <p>€0</p>
             </div>
             <div className="shadow">
               <div className={styles.flex}>
@@ -82,7 +82,7 @@ const Dashboard = () => {
                   <p style={{ whiteSpace: "nowrap" }}>&#8594; View</p>
                 </Link>
               </div>
-              <p>$0</p>
+              <p>€0</p>
             </div>
             <div className="shadow">
               <div className={styles.flex}>
@@ -91,7 +91,7 @@ const Dashboard = () => {
                   <p style={{ whiteSpace: "nowrap" }}>&#8594; View</p>
                 </Link>
               </div>
-              <p>$0</p>
+              <p>€0</p>
             </div>
           </div>
           <div className="px-4 overflow-x-auto">

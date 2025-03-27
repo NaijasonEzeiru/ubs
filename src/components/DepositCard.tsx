@@ -27,11 +27,11 @@ const DepositCard = () => {
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Minimum</span> $10.00
+              <span>{} Minimum</span> €10.00
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Maximum</span> $500.00
+              <span>{} Maximum</span> €500.00
             </li>
             <a>APPLY NOW</a>
           </div>
@@ -52,11 +52,11 @@ const DepositCard = () => {
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Minimum</span> $100.00
+              <span>{} Minimum</span> €100.00
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Maximum</span> $1,000.00
+              <span>{} Maximum</span> €1,000.00
             </li>
             <a>APPLY NOW</a>
           </div>
@@ -77,11 +77,11 @@ const DepositCard = () => {
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Minimum</span> $500.00
+              <span>{} Minimum</span> €500.00
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Maximum</span> $20,000.00
+              <span>{} Maximum</span> €20,000.00
             </li>
             <a>APPLY NOW</a>
           </div>

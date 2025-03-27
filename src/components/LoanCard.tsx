@@ -34,11 +34,11 @@ const LoanCard = () => {
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Minimum</span> $100.00
+              <span>{} Minimum</span> €100.00
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Maximum</span> $1,000.00
+              <span>{} Maximum</span> €1,000.00
             </li>
             <a style={{ backgroundColor: "#223a66" }} className={styles.aHover}>
               APPLY NOW
@@ -68,11 +68,11 @@ const LoanCard = () => {
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Minimum</span> $1,000.00
+              <span>{} Minimum</span> €1,000.00
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Maximum</span> $100,000.00
+              <span>{} Maximum</span> €100,000.00
             </li>
             <a style={{ backgroundColor: "#223a66" }} className={styles.aHover}>
               APPLY NOW
@@ -102,11 +102,11 @@ const LoanCard = () => {
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Minimum</span> $5.000.00
+              <span>{} Minimum</span> €5.000.00
             </li>
             <li className={styles.list}>
               {" "}
-              <span>{} Maximum</span> $50,000.00
+              <span>{} Maximum</span> €50,000.00
             </li>
             <a style={{ backgroundColor: "#223a66" }} className={styles.aHover}>
               APPLY NOW

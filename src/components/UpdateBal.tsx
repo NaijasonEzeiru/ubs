@@ -128,18 +128,18 @@ const UpdateBal = ({ api, CROrDR }: { api: string; CROrDR: string }) => {
               Select Currency:
               <input
                 type="radio"
-                {...register("currency")}
-                value="$"
-                className="ml-3"
-              />{" "}
-              $
-              <input
-                type="radio"
                 value="€"
                 {...register("currency")}
                 className="ml-3"
               />{" "}
               €
+              <input
+                type="radio"
+                {...register("currency")}
+                value="$"
+                className="ml-3"
+              />{" "}
+              $
             </label>
           </div>
           <span className={styles.error}> {errors.currency?.message}</span>

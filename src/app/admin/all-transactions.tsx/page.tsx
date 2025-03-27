@@ -152,8 +152,8 @@ const AllTransactions = () => {
                   })
                 }
               >
-                <option value="$">$</option>
                 <option value="€">€</option>
+                <option value="$">$</option>
               </select>
             </label>
             <label>
