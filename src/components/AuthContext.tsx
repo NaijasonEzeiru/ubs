@@ -17,6 +17,7 @@ interface IUser {
   pending_KYC: boolean;
   verification_id: number | null;
   currency: string;
+  transactions?: [];
 }
 
 interface IContext {
