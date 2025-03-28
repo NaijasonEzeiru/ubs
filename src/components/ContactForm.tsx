@@ -22,9 +22,9 @@ const ContactForm = () => {
           </span>
           <h4>Email Us</h4>
 
-          {/* <a href="mailto:Union Bank of Switzerlandbank@accountant.com">
-            Union Bank of Switzerlandbank@accountant.com
-          </a> */}
+          <a href="mailto:info@unionbankswitzerland.com">
+            info@unionbankswitzerland.com
+          </a>
         </div>
         <div className="flex flex-col justify-center items-center w-full shadow-lg py-7 gap-3 px-4">
           <span className={styles.icon}>
