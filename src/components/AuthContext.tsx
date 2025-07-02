@@ -72,11 +72,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       router.refresh();
       // user?.isAdmin ? router.push("/dashboard") : router.push("/admin");
       if (user?.isAdmin) {
-        window.location.href = "/dashboard";
-        // router.push("/dashboard");
+        router.push("/dashboard");
       } else {
-        // router.push("/admin");
-        window.location.href = "/admin";
+        router.push("/admin");
       }
     } else {
       setError(data.message);
@@ -101,8 +99,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     console.log({ auth: user });
   }, []);
 
-  const checkUserLoggedIn = async () => {
-    console.log("effect");
+  async function checkUserLoggedIn() {
     const res = await fetch(`${API_URL}/auth/login`, {
       method: "GET",
       credentials: "include",
@@ -120,7 +117,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       setUser(null);
       setAuthChecking(false);
     }
-  };
+  }
   const getAllUsers = async () => {
     console.log("effect");
     const res = await fetch(`${API_URL}/user`, {
